@@ -11,9 +11,18 @@ import {
 } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
-import posts from "./PostCard";
+import PostCard from "./PostCard";
+
+let posts = require("../temp_posts.json")
 
 export default class Feed extends Component {
+
+    renderItem = ({ item: post }) => {
+        return <PostCard post={post}/>;
+    };
+
+    keyExtractor = (item, index) => index.toString();
+
 	render() {
 		return (
 			<View style={styles.container}>

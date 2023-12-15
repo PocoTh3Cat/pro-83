@@ -30,7 +30,7 @@ export default class Feed extends Component {
 				<View style={styles.appTitle}>
 					<View style={styles.appIcon}>
 						<Image
-						source={require("../assets/splash.png")}
+						source={require("../assets/logo.png")}
 						style={styles.iconImage}
 						></Image>
 					</View>
@@ -70,8 +70,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   iconImage: {
-    width: 250,
-    height: 250,
+    width: "100%",
+    height: "100%",
+    resizeMode: "contain"
   },
   appTitleTextContainer: {
     flex: 0.8,

@@ -9,7 +9,7 @@ import {
     StyleSheet
 } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
-import Ionicons from "react-native-ionicons";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 let post = require("../temp_posts.json")
 
